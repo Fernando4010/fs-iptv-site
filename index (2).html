@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FS IPTV — TV Online Rápida e Barata</title>
+  <meta name="description" content="FS IPTV — Planos mensais e anuais com preço justo. Teste grátis, pagamento via Pix e suporte no WhatsApp.">
+  <style>
+    :root{
+      --azul:#0d47a1;
+      --azul-escuro:#0b3b86;
+      --vermelho:#e53935;
+      --cinza:#f4f6fb;
+      --texto:#273142;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial;
+         color:var(--texto);background:var(--cinza);line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    header{background:linear-gradient(135deg,var(--azul),var(--azul-escuro));color:#fff}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
+    .logo-mark{width:38px;height:38px;border-radius:10px;background:
+      radial-gradient(circle at 30% 35%, #fff8, transparent 40%),
+      linear-gradient(135deg,var(--vermelho),#cf2b29);display:grid;place-items:center;
+      box-shadow:0 6px 18px rgba(0,0,0,.25);color:#fff;font-weight:900}
+    .hero{padding:36px 0 48px;display:grid;gap:14px}
+    .hero h1{margin:0;font-size:34px}
+    .hero p{margin:0;opacity:.95}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .btn{padding:12px 18px;border-radius:10px;font-weight:700;display:inline-flex;align-items:center;gap:8px;
+         transition:.2s ease;box-shadow:0 6px 14px rgba(0,0,0,.15)}
+    .btn-primary{background:#fff;color:var(--azul)}
+    .btn-primary:hover{transform:translateY(-1px)}
+    .btn-outline{border:2px solid #fff;color:#fff}
+    .badge{background:rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;font-size:13px;
+           display:inline-flex;align-items:center;gap:8px}
+    /* Planos */
+    section{padding:46px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.grid{grid-template-columns:1fr} .hero h1{font-size:28px}}
+    .card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 10px 24px rgba(0,0,0,.08)}
+    .price{font-size:32px;font-weight:900;color:var(--azul);margin:4px 0 10px}
+    .tag{font-size:12px;background:linear-gradient(135deg,var(--vermelho),#c62828);color:#fff;
+         padding:6px 10px;border-radius:999px;display:inline-block}
+    ul{padding-left:18px;margin:8px 0 0}
+    li{margin:6px 0}
+    .card .assinar{margin-top:14px;background:linear-gradient(135deg,var(--azul),var(--azul-escuro));color:#fff}
+    /* Seção features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media(max-width:880px){.features{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.features{grid-template-columns:1fr}}
+    .feature{background:#fff;border-radius:16px;padding:18px;box-shadow:0 10px 24px rgba(0,0,0,.08)}
+    .feature h3{margin:6px 0 8px}
+    /* FAQ */
+    details{background:#fff;border-radius:12px;padding:14px 16px;margin:10px 0;box-shadow:0 8px 20px rgba(0,0,0,.06)}
+    summary{cursor:pointer;font-weight:700}
+    footer{background:#fff;color:#556; padding:24px 0;border-top:4px solid var(--azul)}
+    /* WhatsApp flutuante */
+    .wpp{position:fixed;right:16px;bottom:16px;background:#25d366;color:#fff;border-radius:999px;padding:12px 16px;
+         font-weight:800;box-shadow:0 10px 20px rgba(0,0,0,.2)}
+    .wpp:hover{transform:translateY(-1px)}
+    .pix{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:8px}
+    .pix code{background:#111;color:#fff;padding:6px 8px;border-radius:8px}
+    .copy{background:var(--vermelho);color:#fff;border:none;border-radius:8px;padding:10px 12px;font-weight:800;cursor:pointer}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="logo">
+        <div class="logo-mark">FS</div>
+        <div>FS IPTV</div>
+      </div>
+      <div class="badge">✔ Teste grátis por 3 horas</div>
+    </div>
+    <div class="container hero">
+      <h1>TV online com qualidade e preço justo</h1>
+      <p>Centenas de canais, filmes e séries. Suporte rápido e pagamento por Pix.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://wa.me/5521997901781?text=Ol%C3%A1%20quero%20assinar%20a%20FS%20IPTV" target="_blank">Falar no WhatsApp</a>
+        <a class="btn btn-outline" href="#planos">Ver planos</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="planos">
+      <h2>Planos FS IPTV</h2>
+      <div class="grid" style="margin-top:14px">
+        <div class="card">
+          <span class="tag">Popular</span>
+          <h3>1 mês</h3>
+          <div class="price">R$ 15,00</div>
+          <ul>
+            <li>Acesso imediato</li>
+            <li>Suporte no WhatsApp</li>
+            <li>Qualidade SD/HD</li>
+          </ul>
+          <a class="btn assinar" href="https://wa.me/5521997901781?text=Quero%20o%20plano%20de%201%20m%C3%AAs" target="_blank">Assinar</a>
+        </div>
+
+        <div class="card">
+          <h3>2 meses</h3>
+          <div class="price">R$ 20,00</div>
+          <ul>
+            <li>Melhor custo-benefício</li>
+            <li>Suporte no WhatsApp</li>
+            <li>Qualidade SD/HD</li>
+          </ul>
+          <a class="btn assinar" href="https://wa.me/5521997901781?text=Quero%20o%20plano%20de%202%20meses" target="_blank">Assinar</a>
+        </div>
+
+        <div class="card">
+          <h3>3 meses</h3>
+          <div class="price">R$ 30,00</div>
+          <ul>
+            <li>Preço especial trimestral</li>
+            <li>Suporte no WhatsApp</li>
+            <li>Qualidade SD/HD</li>
+          </ul>
+          <a class="btn assinar" href="https://wa.me/5521997901781?text=Quero%20o%20plano%20de%203%20meses" target="_blank">Assinar</a>
+        </div>
+
+        <div class="card">
+          <h3>6 meses</h3>
+          <div class="price">R$ 50,00</div>
+          <ul>
+            <li>Economia no semestre</li>
+            <li>Suporte no WhatsApp</li>
+            <li>Qualidade SD/HD</li>
+          </ul>
+          <a class="btn assinar" href="https://wa.me/5521997901781?text=Quero%20o%20plano%20de%206%20meses" target="_blank">Assinar</a>
+        </div>
+
+        <div class="card">
+          <span class="tag">Anual</span>
+          <h3>12 meses</h3>
+          <div class="price">R$ 80,00</div>
+          <ul>
+            <li>1 ano de tranquilidade</li>
+            <li>Suporte no WhatsApp</li>
+            <li>Qualidade SD/HD</li>
+          </ul>
+          <a class="btn assinar" href="https://wa.me/5521997901781?text=Quero%20o%20plano%20de%2012%20meses" target="_blank">Assinar</a>
+        </div>
+      </div>
+
+      <div class="pix">
+        <strong>Pix (Banco BV):</strong>
+        <code>21 99790-1781</code>
+        <button class="copy" onclick="copyPix()">Copiar chave</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Por que escolher a FS IPTV?</h2>
+      <div class="features" style="margin-top:14px">
+        <div class="feature">
+          <h3>Sem burocracia</h3>
+          <p>Ativação rápida e suporte pelo WhatsApp.</p>
+        </div>
+        <div class="feature">
+          <h3>Compatibilidade</h3>
+          <p>Funciona em Smart TV, TV Box, celular e computador.</p>
+        </div>
+        <div class="feature">
+          <h3>Teste grátis</h3>
+          <p>Experimente por 3 horas antes de assinar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Perguntas frequentes</h2>
+      <details>
+        <summary>Como recebo o acesso?</summary>
+        <p>Após o pagamento via Pix, envie o comprovante no WhatsApp. Enviamos a lista M3U e instruções na hora.</p>
+      </details>
+      <details>
+        <summary>Posso usar em mais de um aparelho?</summary>
+        <p>O acesso é para um dispositivo por vez. Fale conosco para opções multi-dispositivo.</p>
+      </details>
+      <details>
+        <summary>Quais formas de pagamento?</summary>
+        <p>Pix (Banco BV) para: <code>21 99790-1781</code>.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2025 FS IPTV — Fernando da Silva. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <a class="wpp" href="https://wa.me/5521997901781?text=Ol%C3%A1%2C%20quero%20assinar%20a%20FS%20IPTV" target="_blank">WhatsApp</a>
+
+  <script>
+    function copyPix(){
+      const chave = "21 99790-1781";
+      navigator.clipboard.writeText(chave).then(() => {
+        alert("Chave Pix copiada: " + chave);
+      }).catch(() => {
+        prompt("Copie a chave Pix:", chave);
+      });
+    }
+  </script>
+</body>
+</html>
